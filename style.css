@@ -108,3 +108,4 @@ blockquote cite{display:block;font-family:var(--sans);font-style:normal;font-siz
 .near-time{font-size:14px;color:var(--pink)}
 .near-item .maplinks{margin-top:8px;font-size:13px}
 @media (max-width:640px){.themes,.near-grid{grid-template-columns:1fr}.car-btn{width:32px;height:32px;font-size:21px;line-height:30px}}
+.legend .dot{flex:0 0 14px;width:14px;height:14px;box-sizing:border-box}
