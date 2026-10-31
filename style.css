@@ -110,3 +110,7 @@ blockquote cite{display:block;font-family:var(--sans);font-style:normal;font-siz
 @media (max-width:640px){.themes,.near-grid{grid-template-columns:1fr}.car-btn{width:32px;height:32px;font-size:21px;line-height:30px}}
 .legend .dot{flex:0 0 14px;width:14px;height:14px;box-sizing:border-box;padding:0;margin:0;border:2px solid #fff}
 .legend .dot.hotel{border-radius:4px}.legend .dot.spot,.legend .dot.ref{border-radius:50%}
+.cashonly{display:inline-block;background:#7a2e3a;color:#fff;font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:999px;margin-right:6px;white-space:nowrap}
+.cashnote{margin:.4rem 0 .8rem}
+.perks{background:#f4f1fb;border:1px solid #d9d0ee;border-radius:12px;padding:12px 16px;margin:16px 0}
+.perks h4{margin:.2rem 0 .4rem}.perks ul{margin:.4rem 0;padding-left:1.2rem}.perks li{margin:.35rem 0}.perks .vs{margin:.6rem 0 0}
