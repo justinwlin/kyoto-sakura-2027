@@ -101,7 +101,7 @@ var P=[{"t": "hotel", "n": "Park Hyatt Kyoto", "lat": 34.99899, "lng": 135.78105
 var el=document.getElementById('kmap');
 if(!window.L){el.innerHTML='<p class="map-fallback">The map could not load. Hotels are mostly in Higashiyama (east Kyoto); Arashiyama is about 35–45 min west by taxi and Daigo-ji about 25–30 min southeast.</p>';return;}
 var map=L.map(el,{scrollWheelZoom:false,tap:true});
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(map);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 var all=[],cen=[],hig=[];
 P.forEach(function(p){
