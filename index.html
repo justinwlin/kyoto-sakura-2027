@@ -3,13 +3,22 @@
 <title>Kyoto cherry blossom hotels, Apr 1–4 2027</title>
 <meta name="description" content="Three nights in Kyoto for two during sakura season: where to stay, what it costs, a simple 3-day plan, and the best cherry blossom spots.">
 <meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="style.css"></head><body>
 <header class="hero" style="background-image:url(images/maruyama.jpg)"><div class="hero-inner">
 <p class="eyebrow">Kyoto · Sakura season · 2 adults</p>
 <h1>Kyoto cherry blossom hotels, Apr 1–4 2027</h1>
 <p class="lede">Three nights in Kyoto for two during sakura season: where to stay, what it costs, a simple 3-day plan, and the best cherry blossom spots.</p></div></header>
 <main>
-<nav class="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#short">The short version</a></li><li><a href="#peak">When the blossoms peak</a></li><li><a href="#glance">Hotels at a glance</a></li><li><a href="#park-hyatt">Park Hyatt Kyoto, our pick</a></li><li><a href="#other-four">The other four</a></li><li><a href="#also">Also considered</a></li><li><a href="#plan">A 3-day sakura plan</a></li><li><a href="#eat">Where to eat</a></li><li><a href="#spots">Best cherry blossom spots</a></li><li><a href="#know">Good to know</a></li><li><a href="#book">When to book</a></li></ol></nav>
+<nav class="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#map">Map overview</a></li><li><a href="#short">The short version</a></li><li><a href="#peak">When the blossoms peak</a></li><li><a href="#glance">Hotels at a glance</a></li><li><a href="#park-hyatt">Park Hyatt Kyoto, our pick</a></li><li><a href="#other-four">The other four</a></li><li><a href="#also">Also considered</a></li><li><a href="#plan">A 3-day sakura plan</a></li><li><a href="#eat">Where to eat</a></li><li><a href="#spots">Best cherry blossom spots</a></li><li><a href="#know">Good to know</a></li><li><a href="#book">When to book</a></li></ol></nav>
+
+<section id="map"><h2>Map overview</h2>
+<p>Hotels, cherry blossom spots and Kyoto Station on one map. Tap a pin for details. Most of the trip is in the Higashiyama cluster; Arashiyama is far west and Daigo-ji is far southeast.</p>
+<div class="map-tools"><button type="button" data-view="all" class="on">Whole trip</button><button type="button" data-view="central">Central Kyoto</button><button type="button" data-view="higashiyama">Higashiyama close-up</button></div>
+<div id="kmap" class="kmap" role="region" aria-label="Map of hotels and cherry blossom spots"><noscript><p class="map-fallback">The map needs JavaScript. Hotels are mostly in Higashiyama (east Kyoto); Arashiyama is about 35–45 min west by taxi and Daigo-ji about 25–30 min southeast.</p></noscript></div>
+<div class="legend"><span><i class="dot hotel"></i>Hotel</span><span><i class="dot spot"></i>Cherry blossom spot</span><span><i class="dot ref"></i>Kyoto Station (reference)</span></div>
+<p class="fine">Pins are placed from Wikipedia and OpenStreetMap coordinates. Travel times in the popups are the same rough estimates used elsewhere on this page.</p>
+</section>
 
 <section id="short"><h2>The short version</h2>
 <div class="callout"><strong>Stay at Park Hyatt Kyoto.</strong> It sits on Ninenzaka in Higashiyama, so the best night-lit cherry trees (Maruyama Park, Kiyomizu-dera, Kodai-ji) are a short walk away, and the Yasaka Pagoda is outside the window. Book with World of Hyatt points, on a refundable rate, now.</div>
@@ -85,4 +94,28 @@
 <p class="fine">Photos belong to their credited owners; Wikimedia Commons photos are used under the licenses noted in each caption.</p></details></section>
 </main>
 <footer><a href="#top" onclick="window.scrollTo(0,0);return false;">Back to top ↑</a></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function(){
+var P=[{"t": "hotel", "n": "Park Hyatt Kyoto", "lat": 34.99899, "lng": 135.78105, "note": "Our pick. On Ninenzaka, the old stone lane in Higashiyama."}, {"t": "hotel", "n": "Four Seasons Hotel Kyoto", "lat": 34.99084, "lng": 135.77644, "note": "Built around an 800-year-old pond garden with its own cherry trees. $12,200 for 3 nights."}, {"t": "hotel", "n": "Six Senses Kyoto", "lat": 34.99111, "lng": 135.774, "note": "Wellness hotel near Sanjusangendo; courtyard weeping cherry. $7,792 for 3 nights."}, {"t": "hotel", "n": "Banyan Tree Higashiyama Kyoto", "lat": 34.99841, "lng": 135.7833, "note": "Ryokan-style hotel up in the hills, in the Kiyomizu-dera neighborhood. $8,142 for 3 nights."}, {"t": "hotel", "n": "Suiran, a Luxury Collection Hotel", "lat": 35.01402, "lng": 135.67323, "note": "On the Hozu River in Arashiyama, about 5 min walk from Togetsukyo Bridge. $6,972 for 3 nights."}, {"t": "hotel", "n": "Capella Kyoto (also considered)", "lat": 34.99935, "lng": 135.772, "note": "Opened March 22, 2026 in the Miyagawa-cho geisha district, next to Kennin-ji."}, {"t": "hotel", "n": "Ritz-Carlton Kyoto (also considered)", "lat": 35.01378, "lng": 135.77085, "note": "Sits on the Kamo River among riverside cherry trees."}, {"t": "spot", "n": "Nene-no-Michi and Kodai-ji", "lat": 35.0003, "lng": 135.7806, "note": "Quiet stone lane and a big weeping cherry. Peak: late March.", "d": "3–5 min walk"}, {"t": "spot", "n": "Maruyama Park", "lat": 35.00376, "lng": 135.78148, "note": "Kyoto's most famous weeping cherry, lit up at night.", "d": "10 min walk"}, {"t": "spot", "n": "Kiyomizu-dera", "lat": 34.99485, "lng": 135.785, "note": "About 1,000 cherry trees around the wooden stage.", "d": "10–15 min walk, uphill"}, {"t": "spot", "n": "Shirakawa, Gion", "lat": 35.00558, "lng": 135.7745, "note": "Cherry trees and willows over a little canal; best at dusk.", "d": "20 min walk or 5 min taxi"}, {"t": "spot", "n": "Kamo River", "lat": 35.011, "lng": 135.7718, "note": "Long riverside walks under cherry trees (pin marks the stretch by the Ritz-Carlton).", "d": "20 min walk or 5–10 min taxi"}, {"t": "spot", "n": "Keage Incline", "lat": 35.00944, "lng": 135.78962, "note": "Old boat railway lined with cherry trees.", "d": "10 min taxi (about 30 min walk)"}, {"t": "spot", "n": "Philosopher's Path", "lat": 35.02479, "lng": 135.79638, "note": "Canal-side path under a tunnel of cherry trees. Peak: early April.", "d": "10–15 min taxi to the south end"}, {"t": "spot", "n": "Heian Shrine garden", "lat": 35.01667, "lng": 135.78222, "note": "Pond garden full of deep-pink weeping cherries.", "d": "10 min taxi (about 30 min walk)"}, {"t": "spot", "n": "Arashiyama and Togetsukyo", "lat": 35.01287, "lng": 135.67776, "note": "Mountains dotted with cherry trees over the river.", "d": "35–45 min taxi"}, {"t": "spot", "n": "Daigo-ji", "lat": 34.95134, "lng": 135.82093, "note": "Where Hideyoshi held his famous cherry blossom party in 1598.", "d": "25–30 min taxi"}, {"t": "spot", "n": "Nijo Castle", "lat": 35.01417, "lng": 135.7475, "note": "Many varieties; peak late March to mid April.", "d": "20 min taxi"}, {"t": "spot", "n": "Kyoto Gyoen", "lat": 35.0234, "lng": 135.7632, "note": "Early weeping cherries; peak late March.", "d": "15–20 min taxi"}, {"t": "spot", "n": "Ninna-ji", "lat": 35.03106, "lng": 135.71381, "note": "Late bloomers; peak mid April.", "d": "30–40 min taxi"}, {"t": "ref", "n": "Kyoto Station", "lat": 34.98556, "lng": 135.75861, "note": "Reference point: the main rail and Shinkansen station."}];
+var el=document.getElementById('kmap');
+if(!window.L){el.innerHTML='<p class="map-fallback">The map could not load. Hotels are mostly in Higashiyama (east Kyoto); Arashiyama is about 35–45 min west by taxi and Daigo-ji about 25–30 min southeast.</p>';return;}
+var map=L.map(el,{scrollWheelZoom:false,tap:true});
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(map);
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+var all=[],cen=[],hig=[];
+P.forEach(function(p){
+ var icon=L.divIcon({className:'pin pin-'+p.t,html:'<span></span>',iconSize:p.t==='hotel'?[22,22]:[16,16],iconAnchor:p.t==='hotel'?[11,11]:[8,8],popupAnchor:[0,-8]});
+ var html='<strong>'+esc(p.n)+'</strong><br>'+esc(p.note)+(p.d?'<br><em>From Park Hyatt: '+esc(p.d)+' (approx)</em>':'');
+ L.marker([p.lat,p.lng],{icon:icon,title:p.n,zIndexOffset:p.t==='hotel'?500:0}).bindPopup(html).addTo(map);
+ all.push([p.lat,p.lng]);
+ if(p.lng>135.74&&p.lat>34.97)cen.push([p.lat,p.lng]);
+ if(p.lng>135.768&&p.lng<135.792&&p.lat<35.007&&p.lat>34.989)hig.push([p.lat,p.lng]);
+});
+var views={all:all,central:cen,higashiyama:hig};
+function show(v){map.fitBounds(L.latLngBounds(views[v]),{padding:[28,28]});}
+show('all');
+document.querySelectorAll('.map-tools button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.map-tools button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');show(b.dataset.view);});});
+})();
+</script>
 </body></html>
